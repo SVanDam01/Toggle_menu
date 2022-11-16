@@ -1,0 +1,121 @@
+/* Reset CSS */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Achtergrond kleur */
+
+:root{
+    --clr-wit: white;
+    --clr-rood: red;
+    --clr-blauw: blue;
+    --clr-groen: green;
+    --clr-geel: yellow;
+}
+
+.bg-wit {
+    background-color: var(--clr-wit)
+}
+
+#bg-wit {
+    background-color: var(--clr-wit)
+}
+
+.bg-rood{
+    background-color: var(--clr-rood)
+}
+
+#bg-rood{
+    background-color: var(--clr-rood)
+}
+
+.bg-blauw{
+    background-color: var(--clr-blauw)
+}
+
+#bg-blauw{
+    background-color: var(--clr-blauw)
+}
+
+.bg-groen{
+    background-color:var(--clr-groen)
+}
+
+#bg-groen{
+    background-color:var(--clr-groen)
+}
+
+.bg-geel{
+    background-color:var(--clr-geel)
+}
+
+#bg-geel{
+    background-color:var(--clr-geel)
+}
+
+/* Hamburger style */
+
+img {
+    top: 0;
+    width: 30px;
+    margin: 0rem 1.0rem 0 1.0rem;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+/* Menu */
+
+.navi-sidebar {
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+}
+
+.sidebar-out {
+    transition: 0.3s ease-in-out;
+    transform: translateX(-400px);
+}
+
+.sidebar-in {
+    transform: translateX(0px);
+    transition: 0.3s ease-in-out;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    position: relative;
+    border: solid;
+    max-width: fit-content;
+}
+
+.container {
+    list-style-type: none;
+    width: 6rem;
+    min-height: 3rem;
+    position: relative;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.container-text {
+    list-style-type: none;
+    border: solid 0.5px black;
+    position: relative;
+    text-align: center;
+    width: 6rem;
+    background-color: black;
+    color: white;
+}
+
+/* tekst van de gekozen kleur */
+
+p {
+position: relative;
+    text-align: center;
+    padding: 2rem;
+}
